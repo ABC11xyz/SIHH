@@ -14,10 +14,7 @@ app.use(express.json());
 
 const corsOptions = ;
 
-app.use(cors( {
-  origin: 'https://pmsss-final-version.netlify.app',
-  credentials: true, 
-}));
+app.use(cors());
 
 app.use("/api/auth/user", userRoutes);
 
