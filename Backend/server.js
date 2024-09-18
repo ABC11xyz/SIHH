@@ -11,9 +11,6 @@ const app = express();
 app.use(cookieParser());
 app.use(express.json()); 
 
-
-const corsOptions = ;
-
 app.use(cors());
 
 app.use("/api/auth/user", userRoutes);
