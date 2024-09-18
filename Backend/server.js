@@ -12,9 +12,12 @@ app.use(cookieParser());
 app.use(express.json()); 
 
 
-app.use(cors({ 
-    credentials: true
-}));
+const corsOptions = {
+  origin: 'https://pmsss-final-version.netlify.app',
+  credentials: true, 
+};
+
+app.use(cors(corsOptions));
 
 app.use("/api/auth/user", userRoutes);
 
