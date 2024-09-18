@@ -22,7 +22,7 @@ const Dashboard = ({role , setRole}) => {
 
       try {
         const response = await axios.get(
-          "http://localhost:5000/api/auth/user/dashboard",
+          "https://sih-pmsss.onrender.com/api/auth/user/dashboard",
           {
             withCredentials: true
           }
