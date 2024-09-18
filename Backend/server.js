@@ -12,16 +12,16 @@ app.use(cookieParser());
 app.use(express.json()); 
 
 
-const corsOptions = {
+const corsOptions = ;
+
+app.use(cors( {
   origin: 'https://pmsss-final-version.netlify.app',
   credentials: true, 
-};
-
-app.use(cors(corsOptions));
+}));
 
 app.use("/api/auth/user", userRoutes);
 
-app.listen(5000, () => {
-    console.log(`Server is running at - http://localhost:5000`);
+app.listen(5001, () => {
+    console.log(`Server is running at - http://localhost:5001`);
     connectDB();
 });
