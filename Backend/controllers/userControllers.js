@@ -27,7 +27,7 @@ export const handleLogin = async (req, res) => {
     res.cookie("jwtToken", token, {
       httpOnly: true,
        sameSite: 'None',
-      secure: process.env.NODE_ENV === "production",
+      secure: true,
       maxAge: 7 * 24 * 60 * 60 * 1000
     });
 
@@ -76,7 +76,7 @@ export const handleSignup = async (req, res) => {
     res.cookie("jwtToken", token, {
       httpOnly: true,
        sameSite: 'None',
-      secure: process.env.NODE_ENV === "production",
+      secure: true,
       maxAge: 7 * 24 * 60 * 60 * 1000
     });
 
