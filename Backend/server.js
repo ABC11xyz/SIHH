@@ -14,7 +14,7 @@ app.use(cookieParser());
 app.use(express.json()); 
 
 app.use(cors({
-    origin : ["https://superb-lollipop-ef3b7a.netlify.app"],
+    origin : ["https://pmsss-rv-2.netlify.app"],
     methods : ["POST" , "GET"],
     credentials : true
 }));
